@@ -1,0 +1,15 @@
+{% if product.metafields.custom.material %}
+  <div class="product-material">
+    Material: {{ product.metafields.custom.material.value }}
+  </div>
+{% endif %}
+
+{% schema %}
+{
+  "name": "Material",
+  "settings": [],
+  "presets": [
+    { "name": "Material" }
+  ]
+}
+{% endschema %}
